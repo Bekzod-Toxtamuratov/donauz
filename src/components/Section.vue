@@ -86,7 +86,7 @@ const categoriesTitle = ref(['All Plants', 'New Arrivals', 'Sale'])
 			<div class="flex flex-col items-center">
 				<img src="../assets/super.svg" alt="img" />
 				<h1 class="text-base uppercase font-semibold">UP TO 75% OFF</h1>
-				<img src="../assets/" alt="img" />
+				<img src="../assets/super.svg" alt="img" />
 			</div>
 		</div>
 
