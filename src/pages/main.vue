@@ -1,12 +1,12 @@
 <script setup>
-import Main from '../components/Main.vue'
-import Section from '../components/Section.vue'
+import Navbar from '../components/Navbar.vue'
+import Search from '../components/Search.vue'
 </script>
 
 <template>
+	<Navbar />
 	<div class="container">
-		<Main />
-		<Section />
+		<Search />
 	</div>
 </template>
 

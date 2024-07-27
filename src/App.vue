@@ -6,15 +6,7 @@ import Navbar from './components/Navbar.vue'
 
 <template>
 	<div>
-		<Navbar />
-
 		<router-view></router-view>
-
-		<!-- <RouterLink to="/">Home</RouterLink>
-		<RouterLink to="/about">About</RouterLink>
-		<RouterLink to="/products">Products</RouterLink> -->
-
-		<Footer />
 	</div>
 </template>
 
