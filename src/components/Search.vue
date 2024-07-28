@@ -1,17 +1,17 @@
 <script setup></script>
 <template>
-	<div class="py-2 flex gap-10 justify-between border-red-500">
+	<div class="container py-2 flex gap-10 justify-between border-red-500">
 		<img src="/dona.png" />
 		<div class="flex w-full items-center max-w-md mx-auto">
 			<input
 				type="text"
 				placeholder="Izlash..."
 				v-model="searchQuery"
-				class="w-full px-4 py-2 border border-purple-500 rounded-l-lg focus:outline-none focus:border-purple-700"
+				class="w-full px-4 py-2 border border-primary-500 rounded-l-lg focus:outline-none focus:border-purple-700"
 			/>
 			<button
 				@click="performSearch"
-				class="px-4 py-2 bg-orange-500 rounded-r-lg hover:bg-orange-600"
+				class="px-4 py-2 bg-primary rounded-r-lg hover:bg-orange-600"
 			>
 				<svg
 					class="w-full h-6 text-white"

@@ -1,0 +1,93 @@
+<script setup>
+import Button from './Button.vue'
+const productData = [
+	{
+		img: '/product13.png',
+		title: 'Choyshab Lelit',
+		imgLittle: '/start.png',
+		price: '149,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product14.png',
+		title: 'Xiomi M 10 Smartfon',
+		imgLittle: '/start.png',
+		price: '1 500 000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product14.png',
+		title: 'Smartwatch 11',
+		imgLittle: '/start.png',
+		price: '149,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product16.png',
+		title: 'O’tgan kunlar 1',
+		imgLittle: '/start.png',
+		price: '50,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product17.png',
+		title: 'Mashina qismlari',
+		imgLittle: '/start.png',
+		price: '149,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product18.png',
+		title: 'O’yinchoq mashina',
+		imgLittle: '/start.png',
+		price: '149,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product19.png',
+		title: 'Choyshab Lelit',
+		imgLittle: '/start.png',
+		price: '149,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+	{
+		img: '/product20.png',
+		title: 'Xiaomi Ми 8 Lite ',
+		imgLittle: '/start.png',
+		price: '149,000 so’m',
+		basketImg: '/backet_two.png',
+	},
+]
+</script>
+<template>
+	<div class="pt-9 mt-10">
+		<h2 class="text-black1 text-4xl font-semibold mb-10">Yangi Mahsulotlar</h2>
+		<div class="grid grid-cols-4 gap-8">
+			<div
+				v-for="(item, index) in productData"
+				:key="index"
+				class="w-[270px]    bg-[#FFFFFF]"
+			>
+				<img :src="item.img" class="rounded-2xl w-full" />
+				<div class="flex justify-between items-center mt-2 px-1">
+					<p class="font-normal text-[16px] leading-5 text-black1">
+						{{ item.title }}
+					</p>
+					<div class="flex items-center gap-1 p">
+						<img :src="item.imgLittle" />
+						<p>4.3</p>
+					</div>
+				</div>
+				<div class="flex justify-between mt-3 items-center px-2 ">
+					<p class="font-medium text-[22px] leading-5 text-black1">
+						{{ item.price }}
+					</p>
+					<img :src="item.basketImg" class="w-[22px] h-[30px]" />
+				</div>
+			</div>
+		</div>
+		<Button />
+	</div>
+</template>
+
+<style lang="scss" scoped></style>
