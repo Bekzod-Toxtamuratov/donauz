@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
-	<div class="bg-[#F77F00] w-full  top-0 right-0">
-		<div class="container">
+	<div class="bg-[#F77F00] w-full top-0 right-0">
+		<div class="container border border-blue-500">
 			<div class="flex justify-between">
 				<div class="flex py-3">
 					<img src="/location.svg" />
