@@ -4,14 +4,18 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '120px',
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '120px',
+			},
 		},
 		extend: {
 			colors: {
 				black1: '#250615',
 				purple: '#FFFDF6',
 				orange: '#F77F00',
-				primary:'#F77F00'
+				primary: '#F77F00',
 			},
 		},
 	},
