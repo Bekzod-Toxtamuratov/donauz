@@ -56,8 +56,12 @@ const productData = [
 		<div
 			class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
 		>
-			<div v-for="(item, index) in productData" :key="index" class="px-2 group">
-				<img :src="item.img" class="rounded-2xl w-full" />
+			<div
+				v-for="(item, index) in productData"
+				:key="index"
+				class="max-sm:flex max-sm:flex-col max-sm:ml-[30px] px-2 group"
+			>
+				<img :src="item.img" class="max-sm:w-[400px] rounded-2xl w-full" />
 				<p
 					class="font-medium text-[16px] group-hover:text-orange text-center leading-5 text-titleColor mt-2"
 				>
@@ -67,6 +71,7 @@ const productData = [
 		</div>
 	</div>
 </template>
+
 <style scoped>
 .text-titleColor {
 	color: #333;

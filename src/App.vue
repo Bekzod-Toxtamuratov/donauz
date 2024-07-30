@@ -2,7 +2,7 @@
 import { RouterView } from 'vue-router'
 </script>
 <template>
-	<div>
+	<div class="bg-[#FFFDF6]">
 		<router-view></router-view>
 	</div>
 </template>

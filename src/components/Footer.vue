@@ -1,14 +1,13 @@
 <script setup></script>
-
 <template>
 	<div class="bg-[#111344] mt-[97px] py-[100px]">
-		<div class="container mx-auto px-4">
+		<div class="container mx-auto ">
 			<div
-				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+				class="max-sm:ml-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
 			>
 				<div class="mb-8 lg:mb-0">
 					<img src="/dona.svg" class="mb-8" />
-					<div class="flex gap-2">
+					<div class="hidden sm:flex gap-2">
 						<img src="/c.svg" />
 						<p class="text-white">2021 Donauz</p>
 					</div>
@@ -56,13 +55,26 @@
 					</div>
 				</div>
 				<div>
-					<h2 class="text-white font-bold text-[22px] leading-5">
+					<h2 class="text-white font-bold  max-lg:text-[20px]  text-[20px] leading-5">
 						Ijtimoiy tarmoqlarda
 					</h2>
-					<div class="flex mt-4 gap-6">
-						<a href="#"><img src="/telegram.svg" alt="Telegram" /></a>
-						<a href="#"><img src="/instragram.svg" alt="Instagram" /></a>
-						<a href="#"><img src="/facebook.svg" alt="Facebook" /></a>
+					<div class="max-sm:mt-7 flex mt-4 gap-6">
+						<a href="telegram.org"
+							><img
+								class="hover:bg-primary"
+								src="/telegram.png"
+								alt="Telegram"
+							/>
+						</a>
+						<a href="https://www.instagram.com/"
+							><img
+								class="hover:bg-primary"
+								src="/instragram.svg"
+								alt="Instagram"
+						/></a>
+						<a href="https://www.facebook.com/"
+							><img class="hover:bg-primary" src="/facebook.svg" alt="Facebook"
+						/></a>
 					</div>
 				</div>
 			</div>

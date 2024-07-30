@@ -74,28 +74,24 @@ const productData = [
 			>
 				<img :src="item.img" class="rounded-2xl w-full" />
 				<div class="flex justify-between items-center mt-2">
-					<p class="font-normal text-lg text-black1">
-						{{ item.title }}
-					</p>
+					<p class="font-normal text-lg text-black1">{{ item.title }}</p>
 					<div class="flex items-center gap-1">
 						<img :src="item.imgLittle" />
 						<p>4.3</p>
 					</div>
 				</div>
 				<div class="flex justify-between mt-3 items-center">
-					<p class="font-medium text-xl text-black1">
-						{{ item.price }}
-					</p>
+					<p class="font-medium text-xl text-black1">{{ item.price }}</p>
 					<img :src="item.basketImg" class="w-6 h-8" />
 				</div>
 			</div>
 		</div>
-		<Button />
+		<Button class="lg:flex lg:justify-center hidden" />
 	</div>
 </template>
 
 <style scoped>
 .bg-black1 {
-	color: #333;
+	color: #333; /* Text color for product title and price */
 }
 </style>
