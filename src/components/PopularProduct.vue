@@ -1,5 +1,6 @@
 <script setup>
 import Button from './Button.vue'
+
 const productData = [
 	{
 		img: '/product13.png',
@@ -59,30 +60,33 @@ const productData = [
 	},
 ]
 </script>
+
 <template>
 	<div class="pt-9 mt-10">
 		<h2 class="text-black1 text-4xl font-semibold mb-10">Ommabop tovarlar</h2>
-		<div class="grid grid-cols-4 gap-8">
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+		>
 			<div
 				v-for="(item, index) in productData"
 				:key="index"
-				class="w-[270px] bg-[#FFFFFF]"
+				class="bg-white p-4 rounded-xl shadow-md"
 			>
 				<img :src="item.img" class="rounded-2xl w-full" />
-				<div class="flex justify-between items-center mt-2 px-1">
-					<p class="font-normal text-[16px] leading-5 text-black1">
+				<div class="flex justify-between items-center mt-2">
+					<p class="font-normal text-lg text-black1">
 						{{ item.title }}
 					</p>
-					<div class="flex items-center gap-1 p">
+					<div class="flex items-center gap-1">
 						<img :src="item.imgLittle" />
 						<p>4.3</p>
 					</div>
 				</div>
-				<div class="flex justify-between mt-3 items-center px-2">
-					<p class="font-medium text-[22px] leading-5 text-black1">
+				<div class="flex justify-between mt-3 items-center">
+					<p class="font-medium text-xl text-black1">
 						{{ item.price }}
 					</p>
-					<img :src="item.basketImg" class="w-[22px] h-[30px]" />
+					<img :src="item.basketImg" class="w-6 h-8" />
 				</div>
 			</div>
 		</div>
@@ -90,4 +94,8 @@ const productData = [
 	</div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.bg-black1 {
+	color: #333;
+}
+</style>

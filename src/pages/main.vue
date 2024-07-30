@@ -1,6 +1,9 @@
 <script setup>
 import Brandes from '../components/Brandes.vue'
+import Footer from '../components/Footer.vue'
 import Navbar from '../components/Navbar.vue'
+import NewProducts from '../components/NewProducts.vue'
+import PopularProduct from '../components/PopularProduct.vue'
 import Products from '../components/Products.vue'
 import Search from '../components/Search.vue'
 </script>
@@ -16,7 +19,7 @@ import Search from '../components/Search.vue'
 			<PopularProduct />
 		</div>
 	</div>
-	<!-- <Footer /> -->
+	<Footer />
 </template>
 
 <style scoped></style>

@@ -50,17 +50,38 @@ const productData = [
 	},
 ]
 </script>
+
 <template>
 	<div class="pt-9 bg-purple">
-		<div class="grid grid-cols-6 gap-8">
-			<div v-for="(item, index) in productData" :key="index" class="px-2">
-				<img :src="item.img" class="rounded-2xl" />
-				<p class="font-medium text-[16px] leading-5 text-black1">
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8"
+		>
+			<div v-for="(item, index) in productData" :key="index" class="px-2 group">
+				<img :src="item.img" class="rounded-2xl w-full" />
+				<p
+					class="font-medium text-[16px] group-hover:text-orange text-center leading-5 text-titleColor mt-2"
+				>
 					{{ item.text }}
 				</p>
 			</div>
 		</div>
 	</div>
 </template>
+<style scoped>
+.text-titleColor {
+	color: #333;
+}
 
-<style lang="scss" scoped></style>
+.text-orange {
+	color: #fb923c;
+}
+.group:hover .group-hover\:text-orange {
+	color: #fb923c;
+}
+.group img {
+	transition: transform 0.3s ease;
+}
+.group:hover img {
+	transform: scale(1.05);
+}
+</style>

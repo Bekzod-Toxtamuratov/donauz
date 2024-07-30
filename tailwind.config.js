@@ -2,6 +2,16 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,vue}'],
 	theme: {
+		screens: {
+			tablet: '640px',
+			// => @media (min-width: 640px) { ... }
+
+			laptop: '1024px',
+			// => @media (min-width: 1024px) { ... }
+
+			desktop: '1280px',
+			// => @media (min-width: 1280px) { ... }
+		},
 		container: {
 			center: true,
 			padding: {
@@ -12,7 +22,7 @@ export default {
 		},
 		extend: {
 			colors: {
-				black1: '#250615',
+				titleColor: '#250615',
 				purple: '#FFFDF6',
 				orange: '#F77F00',
 				primary: '#F77F00',
